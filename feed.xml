@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2022-04-08T20:47:26+02:00</updated><id>/feed.xml</id><title type="html">blank</title><subtitle>Robin Dupont personal page
+</subtitle><entry><title type="html">🛠️ Modding your Game Boy Advance</title><link href="/blog/2022/modding-your-game-boy-advance/" rel="alternate" type="text/html" title="🛠️ Modding your Game Boy Advance" /><published>2022-04-05T22:15:00+02:00</published><updated>2022-04-05T22:15:00+02:00</updated><id>/blog/2022/modding-your-game-boy-advance</id><content type="html" xml:base="/blog/2022/modding-your-game-boy-advance/"><![CDATA[<p>Recently I wanted to play <em>Pokémon Fire Red</em> 🔥 on original hardware, it is to say a <strong>Game Boy Advance</strong> (GBA) and not an emulator of any kind. Since I had a GBA SP (AGS-001) as a kid, I wanted to play on a <strong>standard</strong> GBA for the sake of “novelty”. However, the original GBA has a <strong>reflective screen</strong>. This type of screen does not emit its <strong>own light</strong> and needs an external light source (such as the sun for example). This makes the screen notoriously <strong>difficult to see</strong> since you need to orient it in a <strong>certain angle</strong> in order to see what it is displaying. More modern screen technologies include their own source of light. The first generation of GameBoy Advance SP (AGS-001) model features a <strong>frontlit screen</strong>. This is the same principle as the old reflective screen, except that light is emitted by a small <strong>led strip</strong> at the bottom of the screen. The latest GBA SP model (AGS-101) features a modern <strong>backlit screen</strong>, where the light source comes from <strong>behind the pixels</strong>. However, this GBA SP revision is rarer that the common AGS-001 frontlit model. In order to play in the best conditions but yet with original hardware, I will mod an original GBA to make a more <strong>up-to-date handheld console</strong>.</p>
+
+<p><br /></p>
+
+<div class="row justify-content-sm-center">
+    <div class="col-sm-5 mt-3 mt-md-0">
+    <figure>
+
+  <picture>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1 img-responsive full-widt" src="/assets/img/blog/gba_modding/gba_modding_1.jpg" data-zoomable="" />
+
+  </picture><figcaption class="caption">Original GBA</figcaption>
+
+</figure>
+
+    </div>
+    <div class="col-sm-5 mt-3 mt-md-0">
+    <figure>
+
+  <picture>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1 img-responsive full-widt" src="/assets/img/blog/gba_modding/gba_modding_21.jpg" data-zoomable="" />
+
+  </picture><figcaption class="caption">Modded GBA</figcaption>
+
+</figure>
+
+    </div>
+</div>
+
+<h2 id="modding-a-gba">Modding a GBA</h2>
+
+<p>As I told you, the main improvement point for the GBA is to <strong>replace the screen</strong> for a modern backlit LCD. However this is <strong>not the only thing</strong> you might want to change. Here is a list of all the parts I bought for my modding project. I ordered all my parts on <a href="https://www.retromodding.com/">Retro Moding</a>, although you can buy them on <strong>various specialized websites</strong> as well Aliexpress.</p>
+
+<h3 id="parts">Parts</h3>
+<ul>
+  <li>
+    <p><a href="https://www.retromodding.com/collections/game-boy-advance/products/game-boy-advance-ips-lcd">IPS LCD Screen</a>: There are various <strong>LCD mods</strong> for the GBA, such as retrofitting a AGS-101 (second GBA SP version) screen, or a <strong>DSi lower screen</strong> (this mod is often called <em>ITA</em> : DS<em>i</em> <em>t</em>o GB<em>A</em> ). However I went with the more modern FunnyPlaying IPS LCD V2, which supports <strong>brightness control</strong> provided that you solder a few wires (more on that later).</p>
+  </li>
+  <li>
+    <p><a href="https://www.retromodding.com/collections/game-boy-advance/products/funny-playing-game-boy-advance-shells-branded">New shell</a>: I decided to buy a new shell for 3 reasons. First, because I bought a second-hand Game Boy Advance and although the shell was in pretty good condition, I vanted to have a <em>brand new shell</em> feeling. Then because the LCD screen I bought necessitates some <strong>cuts</strong> in the original shell, and I wanted to <strong>preserve it</strong>. Fortunately FunnyPlaying also provides shell <strong>specifically moulded</strong> for their LCD. And finally, because there are a lot of color to choose from. So you can build yourself a <strong>nice-looking GBA!</strong></p>
+  </li>
+  <li>
+    <p><a href="https://www.retromodding.com/products/game-boy-advance-buttons?variant=5398357278753">New Buttons</a>: Just to match your new shell!</p>
+  </li>
+  <li>
+    <p><a href="https://www.retromodding.com/products/funny-playing-game-boy-advance-silicone-pads?variant=41350446645404">New Silicone Pads</a>: The original silicone pads might be a bit <strong>worn out</strong> so you might want to replace them. Moreover, if you want to use a <strong>clear case</strong>, you can choose <strong>colorful</strong> silicon pads. Bear in mind that your start and select buttons will the <strong>same color</strong> as the silicone pads (since they actually are a one-piece silicone pad)!</p>
+  </li>
+  <li>
+    <p><a href="https://www.retromodding.com/products/budget-game-boy-advance-glass-screen-lens?variant=31432753184832">New Glass Lens</a>: The FunnyPlaying IPS LCD V2 has slightly <strong>different dimensions</strong> from the old screen, so you need an <strong>appropriate lens</strong>. A glass lens will be more <strong>scratch-resistant</strong> than a plastic one, but it might <strong>shatter</strong> if dropped. Pick the one you like! There are several colors and variants as well.</p>
+  </li>
+  <li>
+    <p><a href="https://www.retromodding.com/products/game-boy-advance-rechargeable-usb-c-battery-pack?_pos=1&amp;_sid=7e53d2891&amp;_ss=r">USB-C Rechargeable Battery</a>: The original Game Boy Advance used two AA batteries. Fortunately, you can now use a USB-C <strong>rechargeable battery pack</strong> that fits in the battery compartment. This battery pack fits in the FunnyPlaying shell without modification. If you use an original shell, you will need to <strong>trim</strong> a bit the battery compartment.</p>
+  </li>
+</ul>
+
+<h3 id="building-process">Building Process</h3>
+
+<h4 id="disassembly">Disassembly</h4>
+
+<p>First I started by fully dissasembling the original GBA. For this step you need <strong>two</strong> screw drivers. A standard <strong>philips</strong> screw driver and a <strong>tri-wing</strong> one (this type of screw is very oftenly used by Nintendo). This is an appropriate time to <strong>clean the PCB</strong> with <strong>isopropyl alcohol</strong>, especially the golden pads located <strong>under the buttons</strong> to make sure the silicon pads make <strong>good contact</strong> with them.
+<br /></p>
+<div class="row justify-content-sm-center">
+    <div class="col-sm mt-4 mt-md-0">
+    <figure>
+
+  <picture>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/blog/gba_modding/gba_modding_9.jpg" data-zoomable="" />
+
+  </picture><figcaption class="caption">View of all the parts</figcaption>
+
+</figure>
+
+    </div>
+    <div class="col-sm mt-4 mt-md-0">
+    <figure>
+
+  <picture>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/blog/gba_modding/gba_modding_6.jpg" data-zoomable="" />
+
+  </picture><figcaption class="caption">GBA motherboard</figcaption>
+
+</figure>
+
+    </div>
+</div>
+<div class="row justify-content-sm-center">
+    <div class="col-sm mt-4 mt-md-0">
+    <figure>
+
+  <picture>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/blog/gba_modding/gba_modding_7.jpg" data-zoomable="" />
+
+  </picture><figcaption class="caption">Original GBA</figcaption>
+
+</figure>
+
+    </div>
+    <div class="col-sm mt-4 mt-md-0">
+    <figure>
+
+  <picture>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/blog/gba_modding/gba_modding_5.jpg" data-zoomable="" />
+
+  </picture><figcaption class="caption">Close up of the motherboard</figcaption>
+
+</figure>
+
+    </div>
+</div>
+
+<p>Although I did not take any pictures of this step, I advise you to <strong>test the screen</strong> at this step. Simply put the <strong>ribon cable</strong> of the new screen in the connector located at the top of the motherboard, and power up your GBA, just to confirm the screen is turning on and showing the <em>Game Boy</em> logo.</p>
+
+<h4 id="assembly">Assembly</h4>
+
+<p>Once I confirmed the screen was ok, I soldered the three <strong>tiny wires</strong> that came with the screen. These wires are to be soldered on the motherboard to enable screen brightness control through <code class="language-plaintext highlighter-rouge">select+L</code> or <code class="language-plaintext highlighter-rouge">select+R</code>. I found easier to solder the wires to the ribon cable first and then to solder the other ends to the appropriate locations. I used a bit of <strong>duct tape</strong> (since I did not had any kapton tape) to secure the ribon cable in place on the <strong>back of the screen</strong>. 
+<br /></p>
+<div class="row justify-content-sm-center">
+    <div class="col-sm mt-4 mt-md-0">
+    <figure>
+
+  <picture>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/blog/gba_modding/gba_modding_10.jpg" data-zoomable="" />
+
+  </picture><figcaption class="caption">Close up of the soldered wires</figcaption>
+
+</figure>
+
+    </div>
+    <div class="col-sm mt-4 mt-md-0">
+    <figure>
+
+  <picture>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/blog/gba_modding/gba_modding_11.jpg" data-zoomable="" />
+
+  </picture><figcaption class="caption">Close up of the motherboard</figcaption>
+
+</figure>
+
+    </div>
+</div>
+
+<p>I placed the screen in the case (<strong>be gentle</strong>, you do not want to break the LCD pannel) and <strong>solder</strong> the wires to the motherboard. I used the foam pad that came with the screen. I made a <strong>small inscision</strong> in the foam pad to let the wires through. Do not forget to put the <strong>buttons</strong> and the <strong>silicon pads</strong> as well !</p>
+
+<p>Depending on your motherboard revision, there are <strong>two possible screen connector</strong>. One with <strong>32 pins</strong> and one with <strong>40 pins</strong>. Mine was 40 pins, but if you have the 32 pins variant, just <strong>bend the ribon cable</strong> to expose the correct connector on the top of the screen.</p>
+
+<div class="row justify-content-sm-center">
+    <div class="col-sm-7 mt-4 mt-md-0">
+    <figure>
+
+  <picture>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/blog/gba_modding/gba_modding_12.jpg" data-zoomable="" />
+
+  </picture><figcaption class="caption">Wires soldered to the motherboard</figcaption>
+
+</figure>
+
+    </div>  
+</div>
+
+<p>After that, I <strong>secured the motherboard</strong> to the front part of the shell. I then added the <strong>battery cover</strong> and the <strong>sticker</strong> for a more <em>genuine</em> look.</p>
+<div class="row justify-content-sm-center">
+<div class="col-sm mt-4 mt-md-0">
+    <figure>
+
+  <picture>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/blog/gba_modding/gba_modding_14.jpg" data-zoomable="" />
+
+  </picture><figcaption class="caption">With the back of the shell</figcaption>
+
+</figure>
+
+    </div>
+<div class="col-sm mt-4 mt-md-0">
+    <figure>
+
+  <picture>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/blog/gba_modding/gba_modding_19.jpg" data-zoomable="" />
+
+  </picture><figcaption class="caption">Battery cover and sticker added</figcaption>
+
+</figure>
+
+    </div>
+<div class="col-sm mt-4 mt-md-0">
+    <figure>
+
+  <picture>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/blog/gba_modding/gba_modding_16.jpg" data-zoomable="" />
+
+  </picture><figcaption class="caption">Ready to add the glass lens</figcaption>
+
+</figure>
+
+    </div>
+</div>
+
+<p>Before putting the glass lens, I made sure that there were <strong>no dust</strong> on the screen or the screen-facing side of the glass lens, since it would <strong>not be possible</strong> to clean it <strong>later</strong>. I finally removed the glass lens protection film. Here is the final result :</p>
+
+<div class="row justify-content-sm-center">
+    <div class="col-sm-8 mt-4 mt-md-0">
+    <figure>
+
+  <picture>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/blog/gba_modding/gba_modding_20.jpg" data-zoomable="" />
+
+  </picture><figcaption class="caption">With the back of the shell</figcaption>
+
+</figure>
+
+    </div>
+</div>
+
+<p>Now let’s beat the <strong>Pokémon league</strong> !</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Recently I wanted to play Pokémon Fire Red 🔥 on original hardware, it is to say a Game Boy Advance (GBA) and not an emulator of any kind. Since I had a GBA SP (AGS-001) as a kid, I wanted to play on a standard GBA for the sake of “novelty”. However, the original GBA has a reflective screen. This type of screen does not emit its own light and needs an external light source (such as the sun for example). This makes the screen notoriously difficult to see since you need to orient it in a certain angle in order to see what it is displaying. More modern screen technologies include their own source of light. The first generation of GameBoy Advance SP (AGS-001) model features a frontlit screen. This is the same principle as the old reflective screen, except that light is emitted by a small led strip at the bottom of the screen. The latest GBA SP model (AGS-101) features a modern backlit screen, where the light source comes from behind the pixels. However, this GBA SP revision is rarer that the common AGS-001 frontlit model. In order to play in the best conditions but yet with original hardware, I will mod an original GBA to make a more up-to-date handheld console.]]></summary></entry><entry><title type="html">🐋 Custom Docker image for Ethereum mining</title><link href="/blog/2021/ethereum-mining-with-docker/" rel="alternate" type="text/html" title="🐋 Custom Docker image for Ethereum mining" /><published>2021-10-21T20:56:00+02:00</published><updated>2021-10-21T20:56:00+02:00</updated><id>/blog/2021/ethereum-mining-with-docker</id><content type="html" xml:base="/blog/2021/ethereum-mining-with-docker/"><![CDATA[<h2 id="about-ethereum-and-ethereum-mining">About Ethereum and Ethereum mining</h2>
+
+<p><strong>Ethereum</strong> is the second most popular cryptocurrency by volume on the internet. One nice thing about it is that it has been conceived to be <strong>ASICs-proof</strong>. You can <em>in theory</em>, only mine ETH on a GPU or CPU. It is to say that you could help secure the blockchain and more importantly <strong>earn a bit of ETH</strong> from your computer. No need for an expensive and <strong>noisy ASIC miner</strong> !</p>
+
+<p>If you want to mine cryptocurrency easily, you can use premade binaries (such as <a href="https://trex-miner.com/">T-Rex miner</a>) or services (such as <a href="https://www.nicehash.com/">NiceHash</a>). However, bear in mind that most of these binaries or services take <strong>a small fee</strong>, generally around <strong>1%</strong> of your hard-earned ETH. If you would rather keep this 1% for you or use <strong>open-source software</strong>, this is possible thanks to <a href="https://github.com/ethereum-mining/ethminer">ethminer</a>!</p>
+
+<p>Ethminer is an open-source Ethereum miner written in C++ and compatible with both AMD (through OpenCL) and Nvidia (through CUDA) GPUs. The latest release of ethminer is from <strong>july 2019</strong>, and is built against CUDA 9 at best. With <strong>CUDA 9</strong> you <strong>will not</strong> be able to run ethminer on the <strong>most recent Nvidia cards</strong> (RTX 3000 series, for example, requires at least CUDA 11.1). Therefore you will need to <strong>build ethminer yourself</strong> if you want to use recent GPUs. This is far from impossible but a bit tedious since ethminer uses Hunter to fetch some dependencies. Hunter uses Bintray, which has been <a href="https://jfrog.com/blog/into-the-sunset-bintray-jcenter-gocenter-and-chartcenter/">sunseted</a> on the 1rst of May 2021.</p>
+
+<p>To keep this simple, the easiest way to use ethminer is to use a <strong>docker container</strong> that does all the hard work of building and running ethminer for you. If you just want to use the Docker image directly, jump to the <a href="#running">section</a> about actually running ethminer. If you want some details about how to make the <strong>Dockerfile</strong> follow through the next section!</p>
+
+<h2 id="requirements">Requirements</h2>
+
+<p>For this project you will need to have :</p>
+<ul>
+  <li>A Linux machine with at least one Nvidia GPU.</li>
+  <li>Docker. It can be installed on linux with <code class="language-plaintext highlighter-rouge">curl https://get.docker.com | sh</code></li>
+  <li>nvidia-docker. It can be installed on Debian based version of Linux with <code class="language-plaintext highlighter-rouge">sudo apt install nvidia-docker2</code></li>
+  <li>The Nvidia drivers. It can be installed on Ubuntu with <code class="language-plaintext highlighter-rouge">sudo apt install nvidia-headless-470-server</code> if it was not already installed.</li>
+</ul>
+
+<h2 id="creating-the-dockerfile">Creating the Dockerfile</h2>
+
+<p>First, let us create a directory to work in, I will call it <code class="language-plaintext highlighter-rouge">ethminer-docker</code>. In our folder, we will first create a script to launch ethminer. Create a file <code class="language-plaintext highlighter-rouge">mining.sh</code> and write the following script:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ethminer <span class="nt">--HWMON</span> 2 <span class="se">\ </span> 
+         <span class="nt">-P</span> <span class="nv">$MINING_ADDRESS</span> <span class="se">\ </span>
+         <span class="nt">--api-bind</span> 0.0.0.0:3333
+</code></pre></div></div>
+<p><code class="language-plaintext highlighter-rouge">--HWMON 2</code> Enable hardware monitoring <br />
+<code class="language-plaintext highlighter-rouge">-P $MINING_ADDRESS</code> Uses an environment variable to store the pool address + wallet <br />
+<code class="language-plaintext highlighter-rouge">--api-bind 0.0.0.0:3333</code> Enable the API on port 3333. There is no need to change the port, since we can expose a different port to the host with Docker.</p>
+
+<p>Your folder structure should now look like this:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ethminer-docker
+└── mining.sh
+</code></pre></div></div>
+
+<p>Now, in order to build our Docker container, we are going to write a file called <code class="language-plaintext highlighter-rouge">Dockerfile</code>. This file will contain all the instruction to create the docker image. The original instructions specific to ethminer can be found on the <a href="https://github.com/ethereum-mining/ethminer/blob/master/docs/BUILD.md"><code class="language-plaintext highlighter-rouge">docs/BUILD.md</code></a> file of the ethermine repo.</p>
+
+<p>In our Dockerfile, we first start by writing the following line that allows us to use a <strong>premade image from Nvidia</strong> containing the drivers as a <strong>base image</strong>, on top of which we will install the drivers. As you can see here, our docker image will have the driver version <code class="language-plaintext highlighter-rouge">460.73.01</code>.</p>
+
+<div class="language-Dockerfile highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">FROM</span><span class="s"> nvidia/driver:460.73.01-ubuntu20.04</span>
+</code></pre></div></div>
+<p>Then we update the sources and install the necessary dependencies to build ethminer.<br />
+The environment variable <code class="language-plaintext highlighter-rouge">DEBIAN_FRONTEND</code> is here to prevent <code class="language-plaintext highlighter-rouge">apt-get</code> from asking us questions since the installation process is supposed to be <strong>unattended</strong>. That is also why we add <code class="language-plaintext highlighter-rouge">-y</code> : to accept without further input from <code class="language-plaintext highlighter-rouge">apt-get</code></p>
+<div class="language-Dockerfile highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">RUN </span>apt-get update <span class="o">&amp;&amp;</span> <span class="se">\
+</span>    <span class="nv">DEBIAN_FRONTEND</span><span class="o">=</span>noninteractive apt-get <span class="nb">install </span>kmod git cmake perl gcc g++ wget <span class="nt">--no-install-recommends</span> <span class="nt">-yq</span>
+</code></pre></div></div>
+
+<p>We fetch the CUDA install script, run it and finaly delete it in the same <code class="language-plaintext highlighter-rouge">RUN</code> statement. This prevents the addition of a lot of useless layer in the creation of the docker image. Here we download CUDA version <code class="language-plaintext highlighter-rouge">11.4.2</code></p>
+<div class="language-Dockerfile highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">RUN </span>wget <span class="nt">--no-check-certificate</span> https://developer.download.nvidia.com/compute/cuda/11.4.2/local_installers/cuda_11.4.2_470.57.02_linux.run <span class="o">&amp;&amp;</span> <span class="se">\
+</span>    sh cuda_11.4.2_470.57.02_linux.run <span class="nt">--silent</span> <span class="nt">--toolkit</span> <span class="nt">--no-man-page</span> <span class="nt">--no-opengl-libs</span> <span class="o">&amp;&amp;</span> <span class="se">\
+</span>    <span class="nb">rm </span>cuda_11.4.2_470.57.02_linux.run 
+</code></pre></div></div>
+<p>We change our working directory to <code class="language-plaintext highlighter-rouge">/</code>.</p>
+<div class="language-Dockerfile highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">WORKDIR</span><span class="s"> "/"</span>
+</code></pre></div></div>
+
+<p>This big one-liner is responsible for cloning, configuring, building ethminer and finaly removing the useless files. This command is quite a big chunk so I will explained it in details. I used a big one-liner once again to <strong>limit the number of layers generated</strong>.</p>
+<div class="language-Dockerfile highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">RUN </span>git clone https://github.com/ethereum-mining/ethminer.git <span class="nt">-o</span> ethminer <span class="o">&amp;&amp;</span> <span class="se">\
+</span>    <span class="nb">cd</span> /ethminer <span class="o">&amp;&amp;</span> <span class="se">\
+</span>    git submodule update <span class="nt">--init</span> <span class="nt">--recursive</span> <span class="o">&amp;&amp;</span> <span class="se">\
+</span>    <span class="nb">mkdir </span>build <span class="o">&amp;&amp;</span> <span class="nb">cd </span>build <span class="o">&amp;&amp;</span> <span class="se">\
+</span>    <span class="c"># Hack because bintray does not exists anymore</span>
+    <span class="c"># see https://unix.stackexchange.com/questions/652841/boost-continually-fails-to-download-while-using-cmake-for-ethminer</span>
+    sed -i '/hunter_config(Boost VERSION 1.66.0)/c\hunter_config(\n     Boost\n     VERSION 1.66.0_new_url\n     SHA1 f0b20d2d9f64041e8e7450600de0267244649766\n     URL https://boostorg.jfrog.io/artifactory/main/release/1.66.0/source/boost_1_66_0.tar.gz\ )' /ethminer/cmake/Hunter/config.cmake &amp;&amp; \
+    cmake .. -DETHASHCL=OFF -DAPICORE=ON -DETHASHCUDA=ON -DBINKERN=OFF &amp;&amp; \
+    cmake --build . &amp;&amp; \
+    make install &amp;&amp; \
+    cd / &amp;&amp; rm -rf ethminer
+</code></pre></div></div>
+<p>In this command, we first clone the repo on a folder called <code class="language-plaintext highlighter-rouge">ethminer</code>. We then basically follow the building instruction from the ethminer repo. But before the configuring, we use a big <code class="language-plaintext highlighter-rouge">sed</code> command to edit the <strong>Hunter configuration</strong>. This is necessary since without this modification, Hunter is going to try to fetch Boost on Bintray and <strong>fail</strong>. Downloading manually Boost is not going to work either. The <strong>hash does not correspond</strong> to the one expected by Hunter, hence this modification with <code class="language-plaintext highlighter-rouge">sed</code>. More details <a href="https://unix.stackexchange.com/questions/652841/boost-continually-fails-to-download-while-using-cmake-for-ethminer">here</a>.<br />
+Once the modification of the Hunter <code class="language-plaintext highlighter-rouge">config.cmake</code> file is done, we generate the build configuration with 4 flags. <code class="language-plaintext highlighter-rouge">-DETHASHCL=OFF</code> <strong>disable OpenCL</strong>, since it is for AMD GPUs. However, ethminer can mine on both AMD and Nvidia GPUs at the same time. So if you want to mine Ethereum on such a hardware configuration, enable OpenCL with <code class="language-plaintext highlighter-rouge">-DETHASHCL=ON</code>. <code class="language-plaintext highlighter-rouge">-DAPICORE=ON</code> Enables the API (more details on that later). <code class="language-plaintext highlighter-rouge">-DETHASHCUDA=ON</code> makes sure <strong>CUDA support is enabled</strong>. And finally <code class="language-plaintext highlighter-rouge">-DBINKERN=OFF</code> prevent the installation of AMD binary kernels (once again, enable it if you want to use AMD GPUs).<br />
+Once this is done, we build ethminer, then install it (so that it is in our <code class="language-plaintext highlighter-rouge">$PATH</code>). and finally <strong>delete the repo directory</strong> as we do not need any of these files anymore.\</p>
+
+<p>Now we <strong>expose port <code class="language-plaintext highlighter-rouge">3333</code></strong> (or any other port that you want to use, but make sure that this is the same port as the one in your <code class="language-plaintext highlighter-rouge">mining.sh</code> script) to access the API. The API is a <strong>simple web page</strong> with a few statistics such as the list of the GPUs, their temperature, fan speed and hash rate. This is helpful since we can <strong>easily access all these informations</strong> without having to look at the <strong>docker logs</strong>.</p>
+<div class="language-Dockerfile highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">EXPOSE</span><span class="s"> 3333</span>
+</code></pre></div></div>
+<p>Example of the ethminer API :</p>
+
+<figure>
+
+  <picture>
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/blog/ethminer_api_example.png" title="Example of ethminer API" data-zoomable="" />
+
+  </picture><figcaption class="caption">Example of ethminer API dashboard.</figcaption>
+
+</figure>
+
+<p>We need to copy our mining script in the <code class="language-plaintext highlighter-rouge">/</code> directory of you docker image.</p>
+<div class="language-Dockerfile highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">COPY</span><span class="s"> mining.sh .</span>
+</code></pre></div></div>
+
+<p>Finally, we have to <strong>overrive</strong> our base image entrypoint by adding a <strong>new one</strong>  which will <strong>launch our mining script</strong>!</p>
+<div class="language-Dockerfile highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">ENTRYPOINT</span><span class="s"> [ "bash", "mining.sh" ]</span>
+</code></pre></div></div>
+
+<p>The final Dockerfile is named <code class="language-plaintext highlighter-rouge">Dockerfile</code> (no extension) and contains the following :</p>
+<div class="language-Dockerfile highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">FROM</span><span class="s"> nvidia/driver:460.73.01-ubuntu20.04</span>
+
+<span class="k">RUN </span>apt-get update <span class="o">&amp;&amp;</span> <span class="se">\
+</span>    <span class="nv">DEBIAN_FRONTEND</span><span class="o">=</span>noninteractive apt-get <span class="nb">install </span>kmod git cmake perl gcc g++ wget <span class="nt">--no-install-recommends</span> <span class="nt">-yq</span>
+
+<span class="k">RUN </span>wget <span class="nt">--no-check-certificate</span> https://developer.download.nvidia.com/compute/cuda/11.4.2/local_installers/cuda_11.4.2_470.57.02_linux.run <span class="o">&amp;&amp;</span> <span class="se">\
+</span>    sh cuda_11.4.2_470.57.02_linux.run <span class="nt">--silent</span> <span class="nt">--toolkit</span> <span class="nt">--no-man-page</span> <span class="nt">--no-opengl-libs</span> <span class="o">&amp;&amp;</span> <span class="se">\
+</span>    <span class="nb">rm </span>cuda_11.4.2_470.57.02_linux.run 
+
+<span class="k">WORKDIR</span><span class="s"> "/"</span>
+
+<span class="k">RUN </span>git clone https://github.com/ethereum-mining/ethminer.git <span class="nt">-o</span> ethminer <span class="o">&amp;&amp;</span> <span class="se">\
+</span>    <span class="nb">cd</span> /ethminer <span class="o">&amp;&amp;</span> <span class="se">\
+</span>    git submodule update <span class="nt">--init</span> <span class="nt">--recursive</span> <span class="o">&amp;&amp;</span> <span class="se">\
+</span>    <span class="nb">mkdir </span>build <span class="o">&amp;&amp;</span> <span class="nb">cd </span>build <span class="o">&amp;&amp;</span> <span class="se">\
+</span>    <span class="nb">sed</span> <span class="nt">-i</span> <span class="s1">'/hunter_config(Boost VERSION 1.66.0)/c\hunter_config(\n     Boost\n     VERSION 1.66.0_new_url\n     SHA1 f0b20d2d9f64041e8e7450600de0267244649766\n     URL https://boostorg.jfrog.io/artifactory/main/release/1.66.0/source/boost_1_66_0.tar.gz\ )'</span> /ethminer/cmake/Hunter/config.cmake <span class="o">&amp;&amp;</span> <span class="se">\
+</span>    cmake .. <span class="nt">-DETHASHCL</span><span class="o">=</span>OFF <span class="nt">-DAPICORE</span><span class="o">=</span>ON <span class="nt">-DETHASHCUDA</span><span class="o">=</span>ON <span class="nt">-DBINKERN</span><span class="o">=</span>OFF <span class="o">&amp;&amp;</span> <span class="se">\
+</span>    cmake <span class="nt">--build</span> <span class="nb">.</span> <span class="o">&amp;&amp;</span> <span class="se">\
+</span>    make <span class="nb">install</span> <span class="o">&amp;&amp;</span> <span class="se">\
+</span>    <span class="nb">cd</span> / <span class="o">&amp;&amp;</span> <span class="nb">rm</span> <span class="nt">-rf</span> ethminer
+
+<span class="k">EXPOSE</span><span class="s"> 3333</span>
+
+<span class="k">COPY</span><span class="s"> mining.sh .</span>
+
+<span class="k">ENTRYPOINT</span><span class="s"> [ "bash", "mining.sh" ]</span>
+</code></pre></div></div>
+
+<p>Your folder structure should now look like this:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ethminer-docker
+├── Dockerfile
+└── mining.sh
+</code></pre></div></div>
+
+<h2 id="building-our-docker-image">Building our Docker image</h2>
+
+<p>Once we have our Dockerfile, this is a rather <strong>easy step</strong>. Assuming that you are in a directory containing only your Dockerfile, run</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker build <span class="nt">-t</span> ethminer <span class="nb">.</span>
+</code></pre></div></div>
+<p>⚠️ <em>Do not forget the dot at the end of the command (it means “the current directory”) !</em></p>
+
+<p>You can change <code class="language-plaintext highlighter-rouge">ethermine</code> by what you want. It is the <strong>name of your docker image</strong>. You can confirm your docker image is on your system by running <code class="language-plaintext highlighter-rouge">docker image ls</code>. This should give something like this :</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>REPOSITORY               TAG                     IMAGE ID       CREATED        SIZE
+ethminer                 latest                  bcf676a57879   6 hours ago    7.15GB
+</code></pre></div></div>
+
+<h2 id="running-ethminer-on-docker-">Running ethminer on docker <a name="running"></a></h2>
+
+<p>Before running ethminer, you need to <strong>install <code class="language-plaintext highlighter-rouge">nvidia-docker</code></strong>. This is a <strong>wrapper</strong> that allows docker to <strong>access your GPUs</strong> ! To install it, run :</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt <span class="nb">install </span>nvidia-docker
+</code></pre></div></div>
+<p>Once this is done, you can run the container with :</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run <span class="nt">-p</span> &lt;port&gt;:3333 <span class="nt">-d</span> <span class="nt">-e</span> <span class="nv">MINING_ADDRESS</span><span class="o">=</span>&lt;your-mining-address&gt; <span class="nt">--name</span> my_ethminer 
+</code></pre></div></div>
+<p>⚠️ <em>Replace</em> <code class="language-plaintext highlighter-rouge">&lt;port&gt;</code> <em>by the port you want to use and</em> <code class="language-plaintext highlighter-rouge">&lt;your-mining-address&gt;</code> <em>by the address of the pool, combined with your wallet. You can find more info about how to write the mining address <a href="https://github.com/ethereum-mining/ethminer/blob/master/docs/POOL_EXAMPLES_ETH.md">here</a></em></p>
+
+<p>The <code class="language-plaintext highlighter-rouge">-p &lt;port&gt;:3333</code> option allows to <strong>acces the ethminer API</strong> on port <code class="language-plaintext highlighter-rouge">&lt;port&gt;</code> of the machine you are currently running it on. If you are happy with port 3333, you can simply use <code class="language-plaintext highlighter-rouge">-p 3333</code> instead. <code class="language-plaintext highlighter-rouge">--name my_ethminer</code> gives a <strong>friendly name</strong> to your container. The <code class="language-plaintext highlighter-rouge">-d</code> makes the docker container run in <strong>detached mode</strong>. If you want to see the logs run :</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker logs <span class="nt">-f</span> my_ethminer
+</code></pre></div></div>
+
+<p>You should see logs like this :</p>
+<pre><code class="language-logs">ethminer 0.19.0
+Build: linux/release/gnu
+
+ i 16:39:15 ethminer Configured pool &lt;pool-address&gt;
+ i 16:39:15 ethminer Api server listening on port 3333.
+ i 16:39:15 ethminer Selected pool &lt;pool-address&gt;
+ i 16:39:15 ethminer Stratum mode : Eth-Proxy compatible
+ i 16:39:15 ethminer Established connection to &lt;pool-address&gt; [&lt;pool-ip&gt;]
+ i 16:39:15 ethminer Spinning up miners...
+cu 16:39:15 cuda-0   Using Pci Id : 04:00.0 NVIDIA GeForce RTX 3070 (Compute 8.6) Memory : 7.65 GB
+cu 16:39:15 cuda-1   Using Pci Id : 05:00.0 NVIDIA GeForce GTX 1060 6GB (Compute 6.1) Memory : 7.65 GB
+ i 16:39:15 ethminer Epoch : 448 Difficulty : 4.29 Gh
+ i 16:39:15 ethminer Job: deaebb22… block 13468527 &lt;pool-address&gt; [&lt;pool-ip&gt;]
+ i 16:39:17 ethminer Job: 0ca80852… block 13468527 &lt;pool-address&gt; [&lt;pool-ip&gt;]
+cu 16:39:17 cuda-1   Generating DAG + Light(on GPU) : 4.57 GB
+cu 16:39:17 cuda-0   Generating DAG + Light(on GPU) : 4.57 GB
+ i 16:39:17 ethminer New API session from &lt;your-local-ip+port&gt;
+ i 16:39:17 ethminer New API session from &lt;your-local-ip+port&gt;
+ i 16:39:19 ethminer Job: e0a946a7… block 13468527 &lt;pool-address&gt; [&lt;pool-ip&gt;]
+ m 16:39:20 ethminer 0:00 A0 0.00 h - cu0 0.00 62C 30% 188.24W, cu1 0.00 57C 49% 51.91W
+</code></pre>
+
+<p>If it is the case, <strong>congratulation</strong>! You are now mining Ethereum on your computer thanks to Docker! There was no need to install <code class="language-plaintext highlighter-rouge">kmod</code>, <code class="language-plaintext highlighter-rouge">git</code>, <code class="language-plaintext highlighter-rouge">cmake</code>, <code class="language-plaintext highlighter-rouge">perl</code>, etc… or even the CUDA Toolkit. Everything was done while building the docker image!</p>
+
+<p>If you want to stop the container, simply run <code class="language-plaintext highlighter-rouge">docker stop my_ethminer</code> and <code class="language-plaintext highlighter-rouge">docker start my_ethminer</code> to start it back.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[About Ethereum and Ethereum mining]]></summary></entry></feed>
